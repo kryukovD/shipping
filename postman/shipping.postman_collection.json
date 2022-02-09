@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "44957363-6f63-4816-be21-37326afd20fa",
+		"name": "shipping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 09 Feb 2022 07:46:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 09 Feb 2022 07:45:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IlVMeFRvUVNJUEZKblkyUnMybFEzb2c9PSIsInZhbHVlIjoiWVdJRXpaL1NDdTJWa0lOTkp0c2dvL2pMdDUyZUpid2EzTzVKZEY5ZWRGeWJCQjV3RkN0MDB0VmFzVmpwS0w2ai9Xakh2aXpxR2Zhb1lpYzJLQTVLdHlWVzhBK2FXdE1uZHZHTlVVSFhycHJWRnQyYzJqYjBWTzdIdzhDNTJFYysiLCJtYWMiOiJlNjQ0ZDA3ZDg1ODlmZGJlYjA0ZWQ5MzhkMDVlNjNmYjA2NDIwOWI3MWU5ZjlmMzhmY2NiZDk1ODFlYzY1MGEyIiwidGFnIjoiIn0%3D; expires=Wed, 09-Feb-2022 09:46:00 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IkhCNEZEamtQNXJvTlRJQnRZVHJQMlE9PSIsInZhbHVlIjoidEpjQ1ozWWxsSjJkRlhiSDhvZisxQ1RCZmFWNFlWZnF0MzBZb2thUmk5ZkgvMXJ0MU11aGdhdVhkNERNbDBaSWFHUVJtWXkrRXV5UzJGRGxLSGl4SjI4L2FHb3lIOWFERENHOVBFVHdrYklmK09XdUFnaXNkUGhNZERHVmwwOUIiLCJtYWMiOiI4OWY5MDE1ZmJkYmI5ZGY1ODEwMGY1MDNhOTJkZDAxYjcwZWZjMTkxZDYzY2VlYmVlZGUwYzg1MWMxZTY2MDlkIiwidGFnIjoiIn0%3D; expires=Wed, 09-Feb-2022 09:46:00 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "<html>\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n        <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">\n        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>\n        <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n        <meta name=\"csrf-token\" content=\"iVHM7daklhJRlPBAXAYYpFoT0G15ZHNviSBZOxQk\">\n        <title></title>\n    </head>\n    <body>\n        <style>\r\n         li:hover{\r\n            cursor: pointer;\r\n            }\r\n     </style>\n        <main class=\"container\">\n            <header class=\"d-flex justify-content-end pt-1 align-items-center\">\n                <div class=\"d-flex-fill    \">\n                    <a type=\"button\" class=\"btn btn-primary d-flex-inline\" href=\"/register\" >Регистрация </a>\n                    <a type=\"button\" class=\"btn btn-primary d-flex-inline\" href=\"/login\">Войти</a>\n                </div>\n            </header>\n            <div class=\"continer text-center\">\n                <h1 class=\"mb-4\">Грузоперевозки</h1>\n                <div class=\"row justify-content-between\">\n                    <ul class=\"list-group col d-inline-block\">\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Санкт-Петербург</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Москва</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Выборг</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Сегежа</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Мурманск</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Сортавала</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Магадан | Саратов</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Магадан | Саратов</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Челябинкс | Калуга</li>\n                        <a type=\"button\" class=\"btn btn-primary mt-3 \" href=\"/add\">Добавить</a>\n                    </ul>\n                    <form class=\"col\" d-inline-block method=\"post\" action=\"/calculate\" id=\"calculateForm\">\n                        <input type=\"hidden\" name=\"_token\" value=\"iVHM7daklhJRlPBAXAYYpFoT0G15ZHNviSBZOxQk\">\n                        <div class=\"form-group  \">\n                            <h5> Рассчитать стоимость </h5>\n                            <p class=\"text-warning\"> *Выберите маршрут из списка слева ! </p>\n                            <input type=\"hidden\" name=\"_token\" :value=\"csrf\">\n                            <input type=\"text \" value=\"\" name=\"shipping\" class=\"form-control-sm form-control d-inline-block\" id=\"count\" aria-describedby=\"emailHelp\" placeholder=\"Выберите маршрут\">\n                            <input type=\"text \" value=\"\" name=\"weight\" class=\"form-control-sm form-control d-inline-block mt-2\" id=\"countWeight\" aria-describedby=\"emailHelp\" placeholder=\"Вес груза в кг\"> \r\n            \n                        </div>\n                        <p id=\"result\" class=\"pt-2 text-success \" > </p>\n                        <button type=\"subbmit\" class=\"btn btn-primary me-1 mt-2\" href=\"/login\">Рассчитать</button>\n                    </form>\n                </div>\n            </div>\n        </main>\n        <script src=\"http://localhost:8000/js/shipping.js\"> </script>\n    </body>\n</html>"
+				},
+				{
+					"name": "http://localhost:8000/add",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/add :GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/add:POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": "yvthwsztyeQkAPzeQ5gHgTvlyxHfsAfE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "to",
+							"value": "Петрозаводск",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "Калининград",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/add?from=Петрозаводск&to=Волгоград",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "Петрозаводск"
+						},
+						{
+							"key": "to",
+							"value": "Волгоград"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/add:POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"value": "yvthwsztyeQkAPzeQ5gHgTvlyxHfsAfE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "to",
+									"value": "Петрозаводск",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "Калининград",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/add?from=Петрозаводск&to=Волгоград",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"add"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "Петрозаводск"
+								},
+								{
+									"key": "to",
+									"value": "Волгоград"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 09 Feb 2022 08:15:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 09 Feb 2022 08:15:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IncxMm5HdFo2ekJYYWpFdWV5SlBXckE9PSIsInZhbHVlIjoiVk5XSGJ5emFSVzdQUFRnZVlYSWhxUk1WTUdITU1MUGZZVjR5bDJjNm5WL0xueWRkbG5MMjZQdGlhL1B1cG8vZjl5MnRBUzYzSGZNckwyK3gwelJibkN6OE9PckpaVkNSR1dNK0hFYVJDeW5nUXArL0Q2VnNMT3JTakYwOWtFVW8iLCJtYWMiOiI0MmNhMGNmOTYzZTdmNTNlM2RmY2Q3OWQ1ZTA5YzI4YjRmYTU3YjNhMTEzZDM4NDc2ZGQ2MmE5MWRiYjJkMDQ1IiwidGFnIjoiIn0%3D; expires=Wed, 09-Feb-2022 10:15:03 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6Inc5NkRuUkJaM1d2R3ZHWkdTVGdUT3c9PSIsInZhbHVlIjoiVU9tV2VObGJ3K0JFUjh2R1RIeEFnOTNpaXlVZ2x1bnZETHJyZThMemlENWVSTUcvMDBiM2dibm1ZQmdFYzVjdHk4elVFTWh4aWpBT2Z1NWtJVWRjRTJjS2Vlc093ODBEMDl2ZUZtUnY5cGFNK3lLVWYwLytJWFVMbzZ1VnBORk0iLCJtYWMiOiIyZDNiMjhjODQ2ZDQ0ZWE5YTFkZGYxMDc4NTViY2I1OWE5NjE1ZjJmMzk2NzBiN2Q1MTBiYzdhYzk5ZTkyMmEzIiwidGFnIjoiIn0%3D; expires=Wed, 09-Feb-2022 10:15:03 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "<html>\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n        <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">\n        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>\n        <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n        <meta name=\"csrf-token\" content=\"iVHM7daklhJRlPBAXAYYpFoT0G15ZHNviSBZOxQk\">\n        <title></title>\n    </head>\n    <body>\n        <style>\r\n         li:hover{\r\n            cursor: pointer;\r\n            }\r\n     </style>\n        <main class=\"container\">\n            <header class=\"d-flex justify-content-end pt-1 align-items-center\">\n                <div class=\"d-flex-fill    \">\n                    <a type=\"button\" class=\"btn btn-primary d-flex-inline\" href=\"/register\" >Регистрация </a>\n                    <a type=\"button\" class=\"btn btn-primary d-flex-inline\" href=\"/login\">Войти</a>\n                </div>\n            </header>\n            <div class=\"continer text-center\">\n                <h1 class=\"mb-4\">Грузоперевозки</h1>\n                <div class=\"row justify-content-between\">\n                    <ul class=\"list-group col d-inline-block\">\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Санкт-Петербург</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Москва</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Выборг</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Сегежа</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Мурманск</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Сортавала</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Магадан | Саратов</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Магадан | Саратов</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Челябинкс | Калуга</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Петрозаводск | Мурманск</li>\n                        <li  onclick=\"makeActive(this)\" class=\"list-group-item\" > Калининград | Петрозаводск</li>\n                        <a type=\"button\" class=\"btn btn-primary mt-3 \" href=\"/add\">Добавить</a>\n                    </ul>\n                    <form class=\"col\" d-inline-block method=\"post\" action=\"/calculate\" id=\"calculateForm\">\n                        <input type=\"hidden\" name=\"_token\" value=\"iVHM7daklhJRlPBAXAYYpFoT0G15ZHNviSBZOxQk\">\n                        <div class=\"form-group  \">\n                            <h5> Рассчитать стоимость </h5>\n                            <p class=\"text-warning\"> *Выберите маршрут из списка слева ! </p>\n                            <input type=\"hidden\" name=\"_token\" :value=\"csrf\">\n                            <input type=\"text \" value=\"\" name=\"shipping\" class=\"form-control-sm form-control d-inline-block\" id=\"count\" aria-describedby=\"emailHelp\" placeholder=\"Выберите маршрут\">\n                            <input type=\"text \" value=\"\" name=\"weight\" class=\"form-control-sm form-control d-inline-block mt-2\" id=\"countWeight\" aria-describedby=\"emailHelp\" placeholder=\"Вес груза в кг\"> \r\n            \n                        </div>\n                        <p id=\"result\" class=\"pt-2 text-success \" > </p>\n                        <button type=\"subbmit\" class=\"btn btn-primary me-1 mt-2\" href=\"/login\">Рассчитать</button>\n                    </form>\n                </div>\n            </div>\n        </main>\n        <script src=\"http://localhost:8000/js/shipping.js\"> </script>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "dane762619",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "dim5430@yandex.ru",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/calculate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
